@@ -1,0 +1,8 @@
+<!doctype html>
+<title>Download file</title>
+<h1>Download file</h1>
+{% for file in download_list %}
+    <a href="{{ download_source[loop.index0] }}" download>{{ file }}</a>
+{% endfor %}
+<a href="/logout" target="blank"><button class='btn btn-default'>Logout</button></a>
+</html>
